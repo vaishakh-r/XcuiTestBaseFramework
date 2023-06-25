@@ -47,7 +47,7 @@ extension PlistParser {
         }
         do {
             let infoPlistData = try Data(contentsOf: path)
-            if let respArrList = PropertyListSerialization.propertyList(from: infoPlistData, options: [], format: nil) as? [Any] {
+            if let respArrList = try PropertyListSerialization.propertyList(from: infoPlistData, options: [], format: nil) as? [Any] {
                 arrayList = respArrList
             }
         } catch {
