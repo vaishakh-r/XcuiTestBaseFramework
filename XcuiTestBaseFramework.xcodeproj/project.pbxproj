@@ -11,6 +11,8 @@
 		3D56A1152A477D950043B68B /* TestObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56A1142A477D950043B68B /* TestObserver.swift */; };
 		3D56A1202A485D180043B68B /* DataUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56A11F2A485D180043B68B /* DataUtility.swift */; };
 		3D56A1222A485D330043B68B /* PlistParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56A1212A485D330043B68B /* PlistParser.swift */; };
+		3D56A1252A488DFF0043B68B /* BaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56A1242A488DFF0043B68B /* BaseApp.swift */; };
+		3D56A1272A4898150043B68B /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56A1262A4898150043B68B /* BaseScreen.swift */; };
 		3DB8DCB92A408AD0006AA0ED /* XcuiTestBaseFrameworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8DCB82A408AD0006AA0ED /* XcuiTestBaseFrameworkApp.swift */; };
 		3DB8DCBB2A408AD0006AA0ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8DCBA2A408AD0006AA0ED /* ContentView.swift */; };
 		3DB8DCBD2A408AD1006AA0ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB8DCBC2A408AD1006AA0ED /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		3D56A1142A477D950043B68B /* TestObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObserver.swift; sourceTree = "<group>"; };
 		3D56A11F2A485D180043B68B /* DataUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUtility.swift; sourceTree = "<group>"; };
 		3D56A1212A485D330043B68B /* PlistParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistParser.swift; sourceTree = "<group>"; };
+		3D56A1242A488DFF0043B68B /* BaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApp.swift; sourceTree = "<group>"; };
+		3D56A1262A4898150043B68B /* BaseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
 		3DB8DCB52A408AD0006AA0ED /* XcuiTestBaseFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcuiTestBaseFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB8DCB82A408AD0006AA0ED /* XcuiTestBaseFrameworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcuiTestBaseFrameworkApp.swift; sourceTree = "<group>"; };
 		3DB8DCBA2A408AD0006AA0ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +85,9 @@
 		3D56A1162A485C740043B68B /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				3D4D90A92A4384ED0078E7BE /* BaseTest.swift */,
+				3D56A1242A488DFF0043B68B /* BaseApp.swift */,
+				3D56A1262A4898150043B68B /* BaseScreen.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -111,6 +118,7 @@
 		3D56A11A2A485CB70043B68B /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				3D56A1232A4883B80043B68B /* Listeners */,
 				3D56A1192A485C9F0043B68B /* Utils */,
 				3D56A1182A485C880043B68B /* Extensions */,
 				3D56A1172A485C7B0043B68B /* DataProvider */,
@@ -145,6 +153,14 @@
 			children = (
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		3D56A1232A4883B80043B68B /* Listeners */ = {
+			isa = PBXGroup;
+			children = (
+				3D56A1142A477D950043B68B /* TestObserver.swift */,
+			);
+			path = Listeners;
 			sourceTree = "<group>";
 		};
 		3DB8DCAC2A408AD0006AA0ED = {
@@ -196,8 +212,6 @@
 				3D56A11A2A485CB70043B68B /* Framework */,
 				3DB8DCD42A408AD1006AA0ED /* XcuiTestBaseFrameworkUITests.swift */,
 				3DB8DCD62A408AD1006AA0ED /* XcuiTestBaseFrameworkUITestsLaunchTests.swift */,
-				3D4D90A92A4384ED0078E7BE /* BaseTest.swift */,
-				3D56A1142A477D950043B68B /* TestObserver.swift */,
 			);
 			path = XcuiTestBaseFrameworkUITests;
 			sourceTree = "<group>";
@@ -348,11 +362,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D56A1252A488DFF0043B68B /* BaseApp.swift in Sources */,
 				3D56A1202A485D180043B68B /* DataUtility.swift in Sources */,
 				3DB8DCD52A408AD1006AA0ED /* XcuiTestBaseFrameworkUITests.swift in Sources */,
 				3D56A1152A477D950043B68B /* TestObserver.swift in Sources */,
 				3D4D90AA2A4384ED0078E7BE /* BaseTest.swift in Sources */,
 				3DB8DCD72A408AD1006AA0ED /* XcuiTestBaseFrameworkUITestsLaunchTests.swift in Sources */,
+				3D56A1272A4898150043B68B /* BaseScreen.swift in Sources */,
 				3D56A1222A485D330043B68B /* PlistParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
