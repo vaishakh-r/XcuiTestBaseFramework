@@ -33,13 +33,13 @@ class BaseTest: XCTestCase {
 
     }
     
-    func test01_call() {
-        print("Hello")
-    }
-    
-    func test02_call() {
-        print("Hello")
-    }
+//    func test01_call() {
+//        print("Hello")
+//    }
+//    
+//    func test02_call() {
+//        print("Hello")
+//    }
     
 }
 
